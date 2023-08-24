@@ -26,11 +26,6 @@ func main() {
 		quote := div.Find(".text").Text()
 		fmt.Printf("Quote: %s\nBy %s\n\n", quote, author)
 	})
-	// c.OnHTML(".text", func(h *colly.HTMLElement) {
-	// 	fmt.Println("Quote", h.Text)
-	// })
-	// c.OnHTML(".author", func(h *colly.HTMLElement) {
-	// 	fmt.Println("Author", h.Text)
-	// })
+
 	c.Visit("https://quotes.toscrape.com")
 }
